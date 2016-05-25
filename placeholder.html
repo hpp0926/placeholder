@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="css/css.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/placeholder.js"></script>
+</head>
+
+<body>
+<div class="container">
+<div class="inputdiv">
+<p>普通的文本框placeholder效果</p>
+    <input type="text" placeholder="请输入您的公司名全称">
+    <input type="number" placeholder="请输入手机号">
+    <input type="email" placeholder="请输入邮箱地址">
+<br>
+<br>
+
+    
+<p>textarea文本域的placeholder效果</p>    
+    <textarea name="beizhu" cols="" rows="" data-value="请把您能提供的材料名称和可供数量依次输入" placeholder="请把您能提供的材料名称和可供数量依次输入"></textarea> 
+   
+<p><span style="color:red">textarea文本域只需要注意：</span>添加一个自定义属性<span style="color:red">data-value</span>，并使data-value的值与placeholder的值相同即可</p>   
+<br>
+<br>
+
+<p>password密码框的placeholder效果</p>    
+    <input type="text" class="showPwd" placeholder="请输入密码">      <!--第一个input type应设为text，class为showPwd（与js中的类名保持一致即可），placeholder的值写在第一个input里；-->
+    <input type="password" class="password" style="display:none;">   <!--第二个input type应为password，class为password(与js中的类名保持一致即可)，同时应设置display:none，使其默认时隐藏；-->
+    
+    <input type="text" class="showPwd" placeholder="请重新输入密码">
+    <input type="password" class="password" style="display:none;">
+
+<p>
+<span style="color:red">密码框需要注意：</span><br>
+1.每一个密码框需要使用两个input,第一个input type应设为text，class为showPwd（与js中的类名保持一致即可），placeholder的值写在第一个input里；<br>
+2.第二个input type应为password，class为password(与js中的类名保持一致即可)，第二个input不需要再加placeholder属性，同时应设置display:none，使其默认时隐藏;<br>
+3.两个input为紧邻的兄弟元素关系，与 【js中的<span style="color:red">$(this).next(".password")</span>.show().focus()】.next(".password")保持一致，若不是紧邻的兄弟元素，可以修改js，使其能够正确选择即可;
+</p>
+</div>
+</div>
+</body>
+</html>

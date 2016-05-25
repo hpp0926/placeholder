@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0px; padding:0px;}
+ul,li{ list-style:none;}
+a{ text-decoration:none;}
+body{ font-family:"微软雅黑"; font-size:14px;}
+.container{height:2000px; width:1200px; background:#f0f0f0; margin:0 auto; overflow:hidden;}
+
+.inputdiv{ margin:50px;}
+.inputdiv input{width:500px;height: 42px; display:block;border: 1px solid #d3d3d3;margin: 13px 0;font-size: 14px;color:#A9A9A9; padding-left:15px;line-height: 42px;}
+.inputdiv textarea{ width:485px; line-height:20px; display:block;height:70px;border: 1px solid #d3d3d3;margin: 13px 0;font-size: 14px;color:#A9A9A9; padding:10px 15px;}
+
+.mt15{ margin-top:15px;}	
+
